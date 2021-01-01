@@ -17,7 +17,11 @@ def game(points, option):
         option = option.split(',')
 
     length = len(option)
+<<<<<<< HEAD
     half = (length - 1) / 2
+=======
+    step = (length - 1) / 2
+>>>>>>> ef620d027f753b3bbdb612d5f3d6b771ec9d4f63
 
     while True:
         user_move = input()
@@ -37,6 +41,7 @@ def game(points, option):
             wins = []
 
             if user_move_id != computer_move_id:
+<<<<<<< HEAD
                 if user_move_id >= half:
                     wins += [i for i in range(user_move_id - int(half), user_move_id)]
                 else:
@@ -44,6 +49,15 @@ def game(points, option):
                     if user_move_id - 1 >= 0:
                         wins += [i for i in range(0, user_move_id)]
                     wins += [i for i in range(length - int(start_point), length)]
+=======
+                if user_move_id >= step:
+                    wins += [i for i in range(user_move_id - int(step), user_move_id)]
+                else:
+                    sth = step - user_move_id
+                    if user_move_id - 1 >= 0:
+                        wins += [i for i in range(0, user_move_id)]
+                    wins += [i for i in range(length - int(sth), length)]
+>>>>>>> ef620d027f753b3bbdb612d5f3d6b771ec9d4f63
 
                 if computer_move_id in wins:
                     print(f'Well done. The computer chose {computer_move} and failed')
@@ -60,7 +74,11 @@ def main():
     name = input('Enter your name: ')
     print(f'Hello, {name}')
     points = rating_file(name)
+<<<<<<< HEAD
     option = input('Paste your tape of game: ')
+=======
+    option = input()
+>>>>>>> ef620d027f753b3bbdb612d5f3d6b771ec9d4f63
     print("Okay, let's start")
     game(int(points), option)
 
