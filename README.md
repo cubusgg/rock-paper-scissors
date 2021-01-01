@@ -5,7 +5,7 @@ A playable Rock-Paper-Scissors game, with a Player vs Computer mode. Practice us
 
 ### Types of game
 1.  paper,scissors,rock (default, when you leave blank)
-2.  rock,paper,scissors,lizard,spock
+2.  [rock,paper,scissors,lizard,spock](https://www.youtube.com/watch?v=x5Q6-wMx-K8)
 3. rock,gun,lightning,devil,dragon,water,air,paper,sponge,wolf,tree,human,snake,scissors,fire
 ![](rock,gun,lightning,devil,dragon,water,air,paper,sponge,wolf,tree,human,snake,scissors,fire.png)
 ### Commands
